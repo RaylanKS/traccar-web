@@ -1,5 +1,7 @@
 # [Traccar Web Interface](https://www.traccar.org)
 
+Fork of https://github.com/traccar/traccar-web, for the website https://rastreio.softquick.com.br.
+
 ## Overview
 
 Traccar is open source server for various GPS tracking devices. This repository contains web interface for the Traccar platform. For back-end checkout [main Traccar repository](https://github.com/tananaev/traccar).
