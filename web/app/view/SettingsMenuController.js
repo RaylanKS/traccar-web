@@ -170,6 +170,20 @@ Ext.define('Traccar.view.SettingsMenuController', {
         }).show();
     },
 
+    onAboutClick: function () {
+        Ext.create('Ext.window.Window', {
+            title: 'Hello',
+            height: 200,
+            width: 400,
+            layout: 'fit',
+            items: {  // Let's put an empty grid in just to illustrate fit layout
+                xtype: 'grid',
+                border: false,
+                
+            }
+        }).show();
+    },
+
     onLogoutClick: function () {
         Ext.create('Traccar.view.dialog.LoginController').logout();
     }

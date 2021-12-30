@@ -22,7 +22,6 @@ Ext.define('Traccar.view.dialog.Login', {
     requires: [
         'Traccar.view.dialog.LoginController'
     ],
-
     controller: 'login',
 
     header: false,
@@ -43,8 +42,8 @@ Ext.define('Traccar.view.dialog.Login', {
             xtype: 'image',
             src: 'logo.svg',
             alt: Strings.loginLogo,
-            width: 240,
-            height: 64,
+            width: 750,
+            height: 100,
             style: {
                 display: 'block',
                 margin: '10px auto 25px'
@@ -60,7 +59,7 @@ Ext.define('Traccar.view.dialog.Login', {
                     xtype: 'window',
                     closeAction: 'hide',
                     referenceHolder: true,
-                    minWidth: 204,
+                    minWidth: 210,
                     layout: 'form',
                     header: false,
                     resizable: true,
@@ -93,12 +92,14 @@ Ext.define('Traccar.view.dialog.Login', {
         }, {
             xtype: 'combobox',
             name: 'language',
+            flex: 1,
             fieldLabel: Strings.loginLanguage,
             store: 'Languages',
             displayField: 'name',
             valueField: 'code',
             editable: false,
             submitValue: false,
+            hidden: true,
             listeners: {
                 select: 'onSelectLanguage'
             },
@@ -106,8 +107,10 @@ Ext.define('Traccar.view.dialog.Login', {
         }, {
             xtype: 'textfield',
             name: 'email',
+            width: 750,
+            flex: 1,
             reference: 'userField',
-            fieldLabel: Strings.userEmail,
+            fieldLabel: Strings.username,
             allowBlank: false,
             enableKeyEvents: true,
             listeners: {
@@ -118,6 +121,8 @@ Ext.define('Traccar.view.dialog.Login', {
         }, {
             xtype: 'textfield',
             name: 'password',
+            width: 750,
+            flex: 1,
             reference: 'passwordField',
             fieldLabel: Strings.userPassword,
             inputType: 'password',

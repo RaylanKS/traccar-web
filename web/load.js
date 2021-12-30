@@ -1,3 +1,19 @@
+/*
+ * Copyright 2015 - 2021 Anton Tananaev (anton@traccar.org)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
 (function () {
     var debugMode, touchMode, locale, localeParameter, extjsVersion, proj4jsVersion, olVersion, i, language, languages, languageDefault;
 
@@ -159,11 +175,14 @@
     addScriptFile('lib/extjs/ext-all.js');
     addScriptFile('lib/extjs/classic/locale/locale-' + locale.languages[locale.language].code + '.js');
 
-    addStyleFile('lib/extjs/classic/theme-triton/resources/theme-triton-all.css');
-    addScriptFile('lib/extjs/classic/theme-triton/theme-triton.js');
+    addStyleFile('lib/extjs/classic/theme-crisp-touch/resources/theme-crisp-touch-all.css');
+    addScriptFile('lib/extjs/classic/theme-crisp-touch/theme-crisp-touch.js');
 
     addScriptFile('lib/extjs/packages/charts/classic/charts.js');
-    addStyleFile('lib/extjs/packages/charts/classic/triton/resources/charts-all.css');
+    addStyleFile('lib/extjs/packages/charts/classic/crisp/resources/charts-all.css');
+
+    addScriptFile('lib/extjs/packages/font-awesome/font-awesome.js');
+    addStyleFile('lib/extjs/packages/font-awesome/resources/font-awesome-all.css');
 
     addStyleFile('lib/ol/ol.css');
     addScriptFile('lib/ol/ol.js');

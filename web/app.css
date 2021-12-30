@@ -1,19 +1,31 @@
+/*
+ * Copyright 2015 - 2021 Anton Tananaev (anton@traccar.org)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
 .view-color-green {
-    background-color: rgba(77, 250, 144, 0.3);
+    background-color: rgba(0, 255, 98, 0.3);
 }
 .view-color-yellow {
-    background-color: rgba(250, 190, 77, 0.3);
+    background-color: rgba(255, 166, 0, 0.3);
 }
 .view-color-red {
-    background-color: rgba(255, 84, 104, 0.3);
+    background-color: rgba(255, 0, 30, 0.3);
 }
 
 .view-item-disabled {
     opacity: 0.5;
-}
-
-.toolbar-header-style {
-    background-color: #5fa2dd !important;
 }
 
 body.x-border-layout-ct, div.x-border-layout-ct {
@@ -50,7 +62,7 @@ body.x-border-layout-ct, div.x-border-layout-ct {
     margin-top: -30px;
     margin-left: -30px;
     border-radius: 50%;
-    border-top: 6px solid #5fa2dd;
+    border-top: 6px solid #0973cf;
     border-right: 6px solid transparent;
     animation: spinner .6s linear infinite;
 }
@@ -59,4 +71,12 @@ body.x-border-layout-ct, div.x-border-layout-ct {
     to {
         transform: rotate(360deg);
     }
+}
+
+.page-background {
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
