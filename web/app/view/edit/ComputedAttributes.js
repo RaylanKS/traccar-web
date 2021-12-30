@@ -29,7 +29,8 @@ Ext.define('Traccar.view.edit.ComputedAttributes', {
     store: 'ComputedAttributes',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

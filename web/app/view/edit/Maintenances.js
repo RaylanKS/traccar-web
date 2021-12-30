@@ -29,7 +29,8 @@ Ext.define('Traccar.view.edit.Maintenances', {
     store: 'Maintenances',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

@@ -114,12 +114,21 @@ Ext.define('Traccar.controller.Root', {
             Traccar.app.setUser(Ext.decode(response.responseText));
             this.loadApp();
         } else {
-            this.login = Ext.create('widget.login', {
-                listeners: {
-                    scope: this,
-                    login: this.onLogin
-                }
-            });
+            if (Traccar.app.isMobile()) {
+                this.login = Ext.create('widget.loginMobile', {
+                    listeners: {
+                        scope: this,
+                        login: this.onLogin
+                    }
+                });
+            } else {
+                this.login = Ext.create('widget.login', {
+                    listeners: {
+                        scope: this,
+                        login: this.onLogin
+                    }
+                });
+            }
             this.login.show();
 
             passwordReset = Ext.Object.fromQueryString(window.location.search).passwordReset;

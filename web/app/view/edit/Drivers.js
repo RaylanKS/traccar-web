@@ -29,7 +29,8 @@ Ext.define('Traccar.view.edit.Drivers', {
     store: 'Drivers',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

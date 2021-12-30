@@ -39,6 +39,7 @@ Ext.define('Traccar.view.Events', {
 
     tbar: {
         componentCls: 'toolbar-header-style',
+        autoScroll: true,
         defaults: {
             xtype: 'button',
             tooltipType: 'title',

@@ -31,6 +31,7 @@ Ext.define('Traccar.view.State', {
 
     tbar: {
         componentCls: 'toolbar-header-style',
+        autoScroll: true,
         items: [{
             xtype: 'tbtext',
             html: Strings.stateTitle,

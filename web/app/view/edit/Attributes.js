@@ -27,7 +27,8 @@ Ext.define('Traccar.view.edit.Attributes', {
     controller: 'attributes',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

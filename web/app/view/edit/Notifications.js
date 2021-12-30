@@ -29,7 +29,8 @@ Ext.define('Traccar.view.edit.Notifications', {
     store: 'Notifications',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

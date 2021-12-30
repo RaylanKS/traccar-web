@@ -29,7 +29,8 @@ Ext.define('Traccar.view.edit.SavedCommands', {
     store: 'Commands',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

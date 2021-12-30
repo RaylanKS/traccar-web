@@ -30,6 +30,7 @@ Ext.define('Traccar.view.edit.Groups', {
 
     tbar: {
         xtype: 'editToolbar',
+        autoScroll: true,
         items: [{
             xtype: 'button',
             disabled: true,

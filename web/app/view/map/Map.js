@@ -28,6 +28,7 @@ Ext.define('Traccar.view.map.Map', {
 
     title: Strings.mapTitle,
     tbar: {
+        autoScroll: true,
         componentCls: 'toolbar-header-style',
         defaults: {
             xtype: 'button',

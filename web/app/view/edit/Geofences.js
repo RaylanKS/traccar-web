@@ -28,7 +28,8 @@ Ext.define('Traccar.view.edit.Geofences', {
     store: 'Geofences',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

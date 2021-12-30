@@ -29,7 +29,8 @@ Ext.define('Traccar.view.edit.Calendars', {
     store: 'Calendars',
 
     tbar: {
-        xtype: 'editToolbar'
+        xtype: 'editToolbar',
+        autoScroll: true
     },
 
     listeners: {

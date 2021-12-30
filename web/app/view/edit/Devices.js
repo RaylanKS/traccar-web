@@ -35,6 +35,7 @@ Ext.define('Traccar.view.edit.Devices', {
 
     tbar: {
         componentCls: 'toolbar-header-style',
+        autoScroll: true,
         defaults: {
             xtype: 'button',
             disabled: true,

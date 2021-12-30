@@ -28,6 +28,7 @@ Ext.define('Traccar.view.map.GeofenceMap', {
     bodyBorder: true,
 
     tbar: {
+        autoScroll: true,
         items: [{
             xtype: 'combobox',
             store: 'GeofenceTypes',

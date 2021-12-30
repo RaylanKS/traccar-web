@@ -36,6 +36,7 @@ Ext.define('Traccar.view.Report', {
 
     tbar: {
         scrollable: true,
+        autoScroll: true,
         items: [{
             xtype: 'tbtext',
             html: Strings.sharedType
