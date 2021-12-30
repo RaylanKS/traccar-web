@@ -171,14 +171,12 @@ Ext.define('Traccar.view.SettingsMenuController', {
     },
 
     onAboutClick: function () {
-        Ext.create('Ext.window.Window', {
-            title: 'Hello',
-            height: 200,
-            width: 400,
+        Ext.create('Traccar.view.dialog.Base', {
+            title: Strings.sharedAboutTraccar,
             layout: 'fit',
             items: {
-                xtype: 'grid',
-                border: false
+                html: Strings.license,
+                border: false,
             }
         }).show();
     },

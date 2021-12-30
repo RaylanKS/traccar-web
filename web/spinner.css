@@ -1,0 +1,45 @@
+/* Source: <https://codepen.io/mrrocks/pen/EiplA/> */
+
+html, body {
+	height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner#before {
+    will-change: transform;
+    animation: rotator 1.4s linear infinite;
+}
+
+@keyframes dash {
+    0% { stroke-dashoffset: 187; }
+    50% {
+      stroke-dashoffset: 46.75;
+      transform:rotateZ(135deg);
+    }
+    100% {
+      stroke-dashoffset: 187;
+      transform:rotateZ(450deg);
+    }
+}
+
+@keyframes rotator {
+    0% { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(270deg);}
+}
+
+.path {
+    will-change: transform;
+    justify-content: center;
+	stroke: #4285F4;
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation:
+      dash 1.4s ease-in-out infinite;
+}
+

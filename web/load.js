@@ -172,6 +172,8 @@
         navigator.__defineGetter__('userAgent', function () { return __originalUserAgent.replace(/\/OPR[^)]*/g, ''); });
     }
 
+    addStyleFile('spinner.css');
+
     addScriptFile('lib/extjs/ext-all.js');
     addScriptFile('lib/extjs/classic/locale/locale-' + locale.languages[locale.language].code + '.js');
 
