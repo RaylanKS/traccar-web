@@ -176,7 +176,7 @@ Ext.define('Traccar.view.SettingsMenuController', {
             layout: 'fit',
             items: {
                 html: Strings.license,
-                border: false,
+                border: false
             }
         }).show();
     },
