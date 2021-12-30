@@ -1,17 +1,19 @@
 /* Source: <https://codepen.io/mrrocks/pen/EiplA/> */
 
-html, body {
-	height: 100%;
+body, html {
+    height: 100%;
 }
-
-body {
-    display: flex;
+.spinner-div {
+	display: flex;
     align-items: center;
-    justify-content: center;
+    height: 100%;
 }
 
-.spinner#before {
+.spinner {
     will-change: transform;
+    margin: 0 auto;
+    display: block;
+
     animation: rotator 1.4s linear infinite;
 }
 

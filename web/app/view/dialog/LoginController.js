@@ -46,6 +46,10 @@ Ext.define('Traccar.view.dialog.LoginController', {
                 callback: function (options, success, response) {
                     var user, password;
                     Ext.get('spinner').setVisible(false);
+                    // Remove class for perfomance reasons:
+                    document.getElementById('spinner-div').removeAttribute('class');
+                    document.getElementById('spinner').removeAttribute('class');
+
                     if (success) {
                         if (this.lookupReference('rememberField').getValue()) {
                             user = Ext.util.Base64.encode(this.lookupReference('userField').getValue());
