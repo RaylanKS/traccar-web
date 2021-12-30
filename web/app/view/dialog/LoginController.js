@@ -28,7 +28,9 @@ Ext.define('Traccar.view.dialog.LoginController', {
         this.lookupReference('registerButton').setDisabled(!Traccar.app.getServer().get('registration'));
         this.lookupReference('registerButton').setHidden(!Traccar.app.getServer().get('registration'));
         this.lookupReference('languageField').setValue(Locale.language);
-        document.body.style = "background: url(background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;";
+        // Background:
+        document.body.style = 'background: url(background.jpg) no-repeat center center fixed; -webkit-background-size: cover; ' +
+        '-moz-background-size: cover; -o-background-size: cover; background-size: cover;';
     },
 
     login: function () {
@@ -52,7 +54,8 @@ Ext.define('Traccar.view.dialog.LoginController', {
                             Ext.util.Cookies.set('password', password, Ext.Date.add(new Date(), Ext.Date.YEAR, 1));
                         }
                         Traccar.app.setUser(Ext.decode(response.responseText));
-                        document.body.style = "";
+                        // Remove background for perfomance when logged:
+                        document.body.style = '';
                         this.fireViewEvent('login');
                     } else {
                         this.getView().setVisible(true);

@@ -41,14 +41,11 @@ Ext.define('Traccar.view.dialog.Register', {
             name: 'email',
             fieldLabel: Strings.username,
             validator: function (val) {
-                return true;
-                /*
-                if (/(.+)@(.+)\.(.{2,})/.test(val)) {
-                    return true;
-                } else {
-                    return Ext.form.field.VTypes.emailText;
+                // Is a valid username?
+                if (val.includes(' ') || val.lenght < 4 || val.lenght > 16) {
+                    return false;
                 }
-                */
+                return true;
             },
             allowBlank: false
         }, {

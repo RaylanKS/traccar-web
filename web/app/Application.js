@@ -22,8 +22,8 @@ Ext.define('Traccar.Application', {
     requires: [
         'Traccar.Style',
         'Traccar.AttributeFormatter',
-        'Traccar.view.TouchFix62',
-        //'font-awesome'
+        'Traccar.view.TouchFix62'
+        // 'font-awesome'
     ],
 
     models: [

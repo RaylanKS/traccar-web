@@ -176,14 +176,12 @@ Ext.define('Traccar.view.SettingsMenuController', {
             height: 200,
             width: 400,
             layout: 'fit',
-            items: {  // Let's put an empty grid in just to illustrate fit layout
+            items: {
                 xtype: 'grid',
-                border: false,
-                
+                border: false
             }
         }).show();
     },
-
     onLogoutClick: function () {
         Ext.create('Traccar.view.dialog.LoginController').logout();
     }
