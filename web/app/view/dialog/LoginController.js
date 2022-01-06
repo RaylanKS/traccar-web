@@ -28,8 +28,11 @@ Ext.define('Traccar.view.dialog.LoginController', {
         this.lookupReference('registerButton').setDisabled(!Traccar.app.getServer().get('registration'));
         this.lookupReference('registerButton').setHidden(!Traccar.app.getServer().get('registration'));
         this.lookupReference('languageField').setValue(Locale.language);
-        // Background
-        // Height 100% to centralize the spinner
+
+        /*
+         * Background
+         * Height 100% to centralize the spinner
+         */
         document.body.style = 'background: url(background.jpg) no-repeat center center fixed; -webkit-background-size: cover; ' +
         '-moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%;';
     },

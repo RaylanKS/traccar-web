@@ -107,12 +107,12 @@ Ext.define('Traccar.controller.Root', {
     onSessionReturn: function (options, success, response) {
         var passwordReset, dialog;
         Ext.get('spinner').setVisible(false);
-        
+
         if (success) {
             // Remove spinner class for perfomance reasons:
             document.getElementById('spinner-div').removeAttribute('class');
             document.getElementById('spinner').removeAttribute('class');
-            
+
             Traccar.app.setUser(Ext.decode(response.responseText));
             this.loadApp();
         } else {
