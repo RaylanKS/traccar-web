@@ -180,14 +180,14 @@
     addStyleFile('lib/extjs/classic/theme-crisp-touch/resources/theme-crisp-touch-all.css');
     addScriptFile('lib/extjs/classic/theme-crisp-touch/theme-crisp-touch.js');
 
+    addStyleFile('lib/ol/ol.css');
+    addScriptFile('lib/ol/ol.js');
+
     addScriptFile('lib/extjs/packages/charts/classic/charts.js');
     addStyleFile('lib/extjs/packages/charts/classic/crisp/resources/charts-all.css');
 
     addScriptFile('lib/extjs/packages/font-awesome/font-awesome.js');
     addStyleFile('lib/extjs/packages/font-awesome/resources/font-awesome-all.css');
-
-    addStyleFile('lib/ol/ol.css');
-    addScriptFile('lib/ol/ol.js');
 
     addStyleFile('lib/ol-layerswitcher/ol-layerswitcher.css');
     addScriptFile('lib/ol-layerswitcher/ol-layerswitcher.js');
