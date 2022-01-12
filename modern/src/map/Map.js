@@ -8,7 +8,9 @@ import { SwitcherControl } from './switcher/switcher';
 import deviceCategories from '../common/deviceCategories';
 import { prepareIcon, loadImage } from './mapUtil';
 import {
-  styleCarto, styleLocationIq, styleMapbox, styleMapTiler, styleOsm,
+  /* remove map providers
+  styleCarto, styleLocationIq, styleMapbox, styleMapTiler, 
+  */ styleOsm,
 } from './mapStyles';
 import { useAttributePreference } from '../common/preferences';
 import palette from '../theme/palette';
@@ -97,17 +99,22 @@ const Map = ({ children }) => {
 
   useEffect(() => {
     switcher.updateStyles([
+      
+      { id: 'osm', title: t('mapOsm'), uri: styleOsm() },
+
+      /* remove maps providers
       { id: 'locationIqStreets', title: t('mapLocationIqStreets'), uri: styleLocationIq('streets', locationIqKey) },
       { id: 'locationIqEarth', title: t('mapLocationIqEarth'), uri: styleLocationIq('earth', locationIqKey) },
       { id: 'locationIqHybrid', title: t('mapLocationIqHybrid'), uri: styleLocationIq('hybrid', locationIqKey) },
-      { id: 'osm', title: t('mapOsm'), uri: styleOsm() },
+
       { id: 'carto', title: t('mapCarto'), uri: styleCarto() },
       { id: 'mapboxStreets', title: t('mapMapboxStreets'), uri: styleMapbox('streets-v11') },
       { id: 'mapboxOutdoors', title: t('mapMapboxOutdoors'), uri: styleMapbox('outdoors-v11') },
       { id: 'mapboxSatellite', title: t('mapMapboxSatellite'), uri: styleMapbox('satellite-v9') },
       { id: 'mapTilerBasic', title: t('mapMapTilerBasic'), uri: styleMapTiler('basic', mapTilerKey) },
       { id: 'mapTilerHybrid', title: t('mapMapTilerHybrid'), uri: styleMapTiler('hybrid', mapTilerKey) },
-    ], 'locationIqStreets');
+      */
+    ], 'osm'); // Default Open Street Maps
   }, [mapTilerKey]);
 
   useEffect(() => {

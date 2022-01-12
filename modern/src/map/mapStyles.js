@@ -20,6 +20,7 @@ export const styleOsm = () => styleCustom(
   'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
   '© <a target="_top" rel="noopener" href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 );
+/* remove maps provider
 
 export const styleCarto = () => ({
   version: 8,
@@ -53,3 +54,4 @@ export const styleMapbox = (style) => `mapbox://styles/mapbox/${style}`;
 export const styleMapTiler = (style, key) => `https://api.maptiler.com/maps/${style}/style.json?key=${key}`;
 
 export const styleLocationIq = (style, key) => `https://tiles.locationiq.com/v3/${style}/vector.json?key=${key}`;
+*/

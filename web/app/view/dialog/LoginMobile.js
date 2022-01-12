@@ -24,6 +24,12 @@ Ext.define('Traccar.view.dialog.LoginMobile', {
     ],
     controller: 'login',
 
+    initComponent: function () {
+        this.callParent();
+        // Mobile friendly (not this.y = 0 because it's ugly in the login screen)
+        this.y = Ext.getBody().getViewSize().height / 10;
+    },
+
     header: false,
     closable: false,
 
@@ -53,7 +59,8 @@ Ext.define('Traccar.view.dialog.LoginMobile', {
             fieldLabel: Strings.settingsServer,
             editable: false,
             value: window.location.host,
-            hidden: !window.appInterface && !(window.webkit && window.webkit.messageHandlers.appInterface),
+            // hidden: !window.appInterface && !(window.webkit && window.webkit.messageHandlers.appInterface),
+            hidden: true,
             createPicker: function () {
                 var self = this, popup = Ext.create({
                     xtype: 'window',
