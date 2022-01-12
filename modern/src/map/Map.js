@@ -91,7 +91,6 @@ const Map = ({ children }) => {
 
   const mapboxAccessToken = useAttributePreference('mapboxAccessToken');
   const mapTilerKey = useAttributePreference('mapTilerKey');
-  const locationIqKey = useAttributePreference('locationIqKey', 'pk.0f147952a41c555a5b70614039fd148b');
 
   useEffect(() => {
     maplibregl.accessToken = mapboxAccessToken;
